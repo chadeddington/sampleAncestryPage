@@ -1,0 +1,299 @@
+body {
+  margin: 0px;
+  background: #f1eeea;
+  min-height: 100vh;
+  font-family: "Source Sans Pro";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f7f3;
+  line-height: 24px;
+  color: #36322d;
+  font-weight: 400;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600px;
+}
+
+footer {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  padding: 20px 10px;
+}
+
+footer a {
+  color: #03678b;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.header-background {
+  background-image: url('imgs/military-collection.jpg');
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.header-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #4489b3;
+  opacity: .9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-overlay nav a {
+  color: #f8f7f3;
+  text-decoration: none;
+}
+
+.header-overlay nav a:not(:last-child):after {
+  content: '›';
+  font-weight: bold;
+  padding: 0px 7px;
+  font-size: 28px;
+  position: relative;
+  top: 2px;
+}
+
+.header-overlay nav a:last-child {
+  font-weight: bold;
+}
+
+.header-overlay nav {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.header-overlay h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 300;
+  font-family: "Source Sans Pro";
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.primary-content {
+  flex: 1px;
+  color: #36322d;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin: 10px;
+
+  max-width: 724px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.25);
+  background-color: #ffffff;
+}
+
+.primary-content h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.primary-content img {
+  width: 100%;
+}
+
+.primary-button, .modal-content input[type=submit] {
+  background-color: #afd663;
+  padding: 10px 15px;
+  box-shadow: inset 0px -12px 25px -2px rgba(0,0,0,0.25);
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600px;
+}
+
+.secondary-content div {
+  width: 355px;
+  padding: 10px;
+  margin: 10px;
+
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.25);
+}
+
+.secondary-content .featured-collections {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.secondary-content h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.secondary-content ul {
+  padding: 0px;
+  list-style-type: none;
+  color: #03678b;
+}
+
+.secondary-content button {
+  background: #7f7f7f;
+}
+
+.discover {
+  background-color: #f1eee9;
+}
+
+.overlay, .modal-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.overlay {
+  background: #000000;
+  opacity: .7;
+}
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 595px;
+  margin: auto;
+  color: #5d5854;
+}
+
+.modal-header {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  border-top-left-radius: 4px;
+  color: #38322e;
+  font-weight: bold;
+}
+
+.modal-content {
+  background: #f9f7f3;
+  padding: 15px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.modal-content a {
+  color: #2e698c;
+}
+
+.modal-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-content input {
+  width: 250px;
+  padding: 6px;
+  border-radius: 2px;
+  box-shadow: inset 0px 2px 3px -2px rgba(0,0,0,0.25);
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.modal-content .input-group.required input {
+  border-color: #f4392c;
+}
+
+.modal-content .input-group.required {
+  color: #f4392c;
+}
+
+.modal-content input[type=submit] {
+  width: initial;
+  margin-top: 10px;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.input-group {
+  margin: 5px 0xp;
+}
+
+#email, .email {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.close-btn {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  background-color: #746e66;
+}
+
+.close-btn svg {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+}
+
+.validate-message {
+  margin-left: 5px;
+}
+
+.validate-message svg {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+@media (max-width: 897px) {
+  .primary-content, .secondary-content, .secondary-content div {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 479px) {
+  .header-background {
+    height: 200px;
+  }
+}
