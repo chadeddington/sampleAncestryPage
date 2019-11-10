@@ -8,12 +8,10 @@ class App extends React.Component {
   }
 
   openModal = (e) => {
-    console.log(this)
     this.setState({modalIsOpen: true})
   }
 
   handleSubmit = (e) => {
-    console.log('submitted');
     this.handleClose();
   }
 
@@ -100,5 +98,4 @@ class App extends React.Component {
 
 
 const app = document.querySelector('#app');
-console.log(app)
 ReactDOM.render(<App />, app);
