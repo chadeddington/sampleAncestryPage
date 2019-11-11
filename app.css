@@ -5,7 +5,11 @@ body {
   font-family: "Source Sans Pro";
 }
 
-main {
+.page {
+  background: #f8f7f3;
+}
+
+.content-wrapper {
   display: flex;
   background-color: #f8f7f3;
   line-height: 24px;
@@ -13,6 +17,8 @@ main {
   font-weight: 400;
   padding: 10px;
   flex-wrap: wrap;
+  max-width: 1010px;
+  margin: auto;
 }
 
 button {
@@ -29,6 +35,7 @@ footer {
   font-weight: 400;
   display: flex;
   justify-content: center;
+  background: #f1eeea;
 }
 
 footer span {
@@ -91,13 +98,6 @@ a, button {
   color: white;
   font-weight: 300;
   font-family: "Source Sans Pro";
-}
-
-.content-wrapper {
-  max-width: 1010px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .primary-content {
